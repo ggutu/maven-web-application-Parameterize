@@ -19,6 +19,13 @@ pipeline {
         sh 'mvn package'
       }
     }
+    mvn clean verify sonar:sonar \
+  -Dsonar.projectKey=team7 \
+  -Dsonar.projectName='team7' \
+  -Dsonar.host.url=http://18.223.97.68:9000 \
+  -Dsonar.token=sqp_8aff177901ef351bc1d3db486f7386faeab88c82
         
   }
+}
+}
 }
