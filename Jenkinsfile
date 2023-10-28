@@ -1,7 +1,7 @@
 pipeline {
   agent any
   tools {
-    sh 'pwd'
+    maven 'maven'
   }
   stages{
     stage('1-cloning project repo'){
